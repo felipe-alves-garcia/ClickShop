@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Shop</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+     <link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="body" class="bg-light" onload="loadProdutos()">
+    <!-- Header -->
+    <header class="bg1 shadow-sm sticky-top animacao">
+        <div class="container-fluid px-3">
+            <nav class="navbar navbar-expand-lg navbar-light py-3">
+                <div class="container-fluid">
+                    <div>
+                        <img src="img/nome.png" id="nome" alt="Click Shop: nome da loja virtual">
+                    </div>
+                    <div>
+                        <img src="img/logo.png" id="logo" alt="cursor de mause, logo">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container my-5">
+        <!-- Banner -->
+        <div class="d-none banner-animate mb-5 rounded-4 overflow-hidden shadow">
+            <div class="position-relative text-white p-5">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg2 opacity-20"></div>
+                <div class="position-relative z-1 row align-items-center">
+                    <div class="col-md-7">
+                        <h2 class="display-5 fw-bold mb-3">Oferta Especial de Verão</h2>
+                        <p class="fs-5 mb-4">Até 50% de desconto em itens selecionados. Aproveite agora!</p>
+                        <button class="btn btn-light fw-bold text-primary px-4 py-2 fw-medium rounded-5">Compre Agora</button>
+                    </div>
+                    <div class="col-md-5 d-none d-md-block">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
+                             alt="Produtos em destaque" 
+                             class="img-fluid rounded-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produtos -->
+        <section id="sectionListas" class="mb-5">
+            
+        </section>
+
+        <!-- Carrossel -->
+        <section class="d-none mb-5">
+            <h2 class="fw-bold fs-3 mb-4">Marcas Parceiras</h2>
+            <div id="brandsCarousel" class="carousel slide bg-white rounded-3 shadow overflow-hidden" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1592155931584-901ac15763e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                             alt="Marcas parceiras" 
+                             class="d-block w-100 carousel-img">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3">
+                            <h3 class="fs-3 fw-bold">As melhores marcas</h3>
+                            <p>Parcerias com os maiores fabricantes do mercado</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                             alt="Ofertas exclusivas" 
+                             class="d-block w-100 carousel-img">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3">
+                            <h3 class="fs-3 fw-bold">Ofertas exclusivas</h3>
+                            <p>Descontos especiais para nossos clientes</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                             alt="Qualidade garantida" 
+                             class="d-block w-100 carousel-img">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3">
+                            <h3 class="fs-3 fw-bold">Qualidade garantida</h3>
+                            <p>Todos os produtos com garantia do fabricante</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#brandsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#brandsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+                
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#brandsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#brandsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#brandsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="d-none mb-5">
+            <h2 class="fw-bold fs-3 mb-4">Categorias Populares</h2>
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <a href="#" class="nav rounded-3 shadow-sm p-4 d-flex flex-column align-items-center text-decoration-none hover-shadow">
+                        <div class="category-icon bg-primary bg-opacity-10">
+                            <i class="fas fa-mobile-alt text-primary fs-3"></i>
+                        </div>
+                        <h3 class="fs-5 text-dark mb-3">Celulares</h3>
+                        <p class="d-none text-muted small">120 produtos</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="#" class="nav rounded-3 shadow-sm p-4 d-flex flex-column align-items-center text-decoration-none hover-shadow">
+                        <div class="category-icon bg-primary bg-opacity-10">
+                            <i class="fas fa-mobile-alt text-primary fs-3"></i>
+                        </div>
+                        <h3 class="fs-5 text-dark mb-3">Celulares</h3>
+                        <p class="d-none text-muted small">120 produtos</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="#" class="nav rounded-3 shadow-sm p-4 d-flex flex-column align-items-center text-decoration-none hover-shadow">
+                        <div class="category-icon bg-primary bg-opacity-10">
+                            <i class="fas fa-mobile-alt text-primary fs-3"></i>
+                        </div>
+                        <h3 class="fs-5 text-dark mb-3">Celulares</h3>
+                        <p class="d-none text-muted small">120 produtos</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="#" class="nav rounded-3 shadow-sm p-4 d-flex flex-column align-items-center text-decoration-none hover-shadow">
+                        <div class="category-icon bg-primary bg-opacity-10">
+                            <i class="fas fa-mobile-alt text-primary fs-3"></i>
+                        </div>
+                        <h3 class="fs-5 text-dark mb-3">Celulares</h3>
+                        <p class="d-none text-muted small">120 produtos</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg1 text-white py-4 animacaoUp">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <p class="text-secondary text-white mb-0 mt-1">Sua loja online favorita com os melhores produtos e preços.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex gap-3">
+                        <a href="https://www.instagram.com/click.shop.tfg?igsh=M2NtOG5wYTQ4ZDY4" class="text-secondary fs-5 hoverOp1"><i class="fab text-white fa-instagram"></i></a>
+                        <a href="https://youtube.com/@universoem3minutos?si=bpOZGjg74BqQjc9r" class="text-secondary fs-5 hoverOp1"><i class="fab text-white fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

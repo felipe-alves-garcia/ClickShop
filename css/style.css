@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+}
+#body{
+    overflow-x: hidden;
+    width:100%;
+}
+.a{
+    text-decoration: none;
+    transition: 200ms ease-in-out;
+    cursor:pointer;
+}
+.a:hover{
+    opacity: 0.9;
+}
+.hoverOp1{
+    transition: 200ms;
+}
+.hoverOp1:hover{
+    opacity: 0.65;
+}
+.bg1{
+    background-color: #46bbff;
+}
+.bg2{
+    background: #46BBFF;
+    background: linear-gradient(115deg, rgba(70, 187, 255, 1) 0%, rgba(80, 82, 193, 1) 50%, rgba(111, 48, 188, 1) 76%, rgba(80, 82, 193, 1) 100%);
+}
+#nome{
+    width:130px;
+}
+#logo{
+    width: 30px;
+    animation: click 3s;
+}
+.animacao{
+    animation:down 1.5s ease-out;
+}
+.animacaoUp{
+    animation:up 1.5s ease-out;
+}
+.produto{
+    width:200px;
+    height:200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    background-color: white;
+    transition: 200ms ease-out;
+}
+.nav:hover{
+    background-color: #b5e4ff;
+}
+
+.banner-animate {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes down {
+    from {
+        transform:translateY(-100%);
+    }
+    to {
+        transform:translateY(0);
+    }
+}
+@keyframes up {
+    from {
+        transform:translateY(100%);
+    }
+    to {
+        transform:translateY(0);
+    }
+}
+@keyframes click {
+    49%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    60%{
+        transform: scale(1);
+    }
+}
+
+.product-card {
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-container {
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color:#46bbff  #e5e7eb;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #e5e7eb;
+    border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #4f46e5;
+    border-radius: 10px;
+}
+
+.carousel-img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.category-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
